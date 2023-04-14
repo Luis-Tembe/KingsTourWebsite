@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="KingsTour Travel Agency has been providing clients with the best travel guides, travel information, and vacation packages for more than a decade. We specialize in travel packages to Europe, Asia, Africa, South America, and the Caribbean. Our guides and services are second to none."
+    />
+    <meta
+      name="keywords"
+      content="travel agency, travel, travel guides, travel information, vacation packages, travel packages, Europe, Asia, Africa, South America, Caribbean"
+    />
+    <meta name="author" content="Stefan Gogov" />
+
+    <link rel="icon" href="./img/Logo2.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SWIPER CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <title>KingsTour — Travel Agency</title>
+
+    <script defer src="js/script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+      <a href="#">
+        <img class="logo" src="img/Logo2.png" alt="KingsTour" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">Home</a></li>
+          <li><a class="main-nav-link" href="#activities">atividades</a></li>
+          <li><a class="main-nav-link" href="#locations">Localizações</a></li>
+          <li><a class="main-nav-link" href="#categories">Categorias</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="main-nav-link" href="#team">Equipe</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Reserve agora</a></li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close"></ion-icon>
+      </button>
+    </header>
+    <!-- ================= MAIN ================= -->
+    <main>
+      <!-- ================= HERO ================= -->
+      <section class="section-hero">
+        <div class="hero-slider">
+          <div class="hero-slide hero-slide--1">
+            <span class="subheading">Atividade mais escolhida</span>
+            <h1 class="heading-primary hero-heading">Kruger Park Tour</h1>
+            <p class="hero-description">
+              Visite o Parque Nacional Kruger e descubra a beleza selvagem da África do Sul! 
+              É uma oportunidade única na vida para os amantes da natureza, com a chance de ver leões, elefantes, búfalos, leopardos e rinocerontes em seu habitat natural. Não perca essa experiência incrível!
+            </p>
+            <div class="hero-btns">
+              <a class="btn btn--outline margin-right-sm" href="#activities"
+                >Procure Atividade</a
+              >
+              <a class="btn btn--full" href="#cta">Reserve agora</a>
+            </div>
+          </div>
+
+          <div class="hero-slide hero-slide--2">
+            <span class="subheading">Melhor Atividade</span>
+            <h1 class="heading-primary hero-heading">Ponta Do Ouro</h1>
+            <p class="hero-description">
+              Descubra o paraíso tropical escondido de Ponta de Ouro, em Moçambique! 
+              Relaxe nas praias de areia branca e águas cristalinas, e aproveite atividades emocionantes como mergulho, pesca e avistamento de golfinhos.
+              Explore a cultura local através de sua deliciosa culinária e mercados de artesanato. Uma experiência inesquecível!
+            </p>
+            <div class="hero-btns">
+              <a class="btn btn--outline margin-right-sm" href="#activities"
+                >Procure atividades</a
+              >
+              <a class="btn btn--full" href="#cta">Reserve agora</a>
+            </div>
+          </div>
+
+          <div class="hero-slide hero-slide--3">
+            <span class="subheading">Nova Atividade</span>
+            <h1 class="heading-primary hero-heading">Tour pela Cidade de Maputo</h1>
+            <p class="hero-description">
+              Descubra a histórica e vibrante cidade de Maputo, a capital de Moçambique! Explore sua fascinante arquitetura e cultura rica e vibrante. 
+              Há muitas opções de entretenimento, desde caminhar pela orla até saborear a culinária local e experimentar a música e dança tradicional moçambicana. 
+              Visite museus e galerias de arte e mergulhe nesta experiência única!
+            </p>
+            <div class="hero-btns">
+              <a class="btn btn--outline margin-right-sm" href="#activities"
+                >Procure Atividade</a
+              >
+              <a class="btn btn--full" href="#cta">Reserve agora</a>
+            </div>
+          </div>
+
+          <button class="slider__btn hero-slider__btn--left">
+            <span>&larr;</span>
+          </button>
+          <button class="slider__btn hero-slider__btn--right">
+            <span>&rarr;</span>
+          </button>
+        </div>
+
+        <!-- ================= SEARCH FORM ================= -->
+        <div class="search-form-container">
+          <form action="#" class="form search-form" method="post">
+            <div class="search-form__elements">
+              <input
+                type="search"
+                name="location"
+                placeholder="Onde queres visitar?"
+                required
+              />
+              <select name="activities" id="select-activity" required>
+                <option value="">Tipo de Atividade:</option>
+                <option value="Aventura">Aventura</option>
+                <option value=" Cultural">Cultural</option>
+                <option value="Tour privada">Tour privada</option>
+                <option value="Gastronomia">Gastronomia</option>
+                <option value="Noturna">Noturna(discotecas)</option>
+                <option value="Scuba diving">Scuba diving</option>
+                <option value="Passeio diurno">Passeio(durante o dia)</option>
+              </select>
+
+              <select
+                name="select-destination"
+                id="select-destination"
+                required
+              >
+                <option value="">Destino:</option>
+                <option value="Ponta do Ouro">Ponta do Ouro</option>
+                <option value="Cidade de Maputo">Cidade de Maputo</option>
+                <option value="Bilene">Bilene</option>
+                <option value="ilha de Inhaca">ilha de Inhaca</option>
+                <option value="Santa Maria">Santa Maria</option>
+                <option value="Machangulo">Machangulo</option>
+                <option value="ilha dos Portugueses">ilha dos Portugueses</option>
+                <option value="Malongane">Malongane</option>
+                <option value="Tofo">Tofo</option>
+              </select>
+
+              <select name="select-duration" id="select-duration" required>
+                <option value="">Duração:</option>
+                <option value="short">1-3 horas</option>
+                <option value="medium">3-5 horas</option>
+                <option value="long">5-7 horas</option>
+                <option value="full day">Todo dia</option>
+              </select>
+            </div>
+            <button class="btn btn--full" type="submit">Search</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- ================= ACTIVITIES ================= -->
+      <section class="section-activities" id="activities">
+        <div class="container">
+          <span class="subheading center-text">Melhores atividades</span>
+          <h2 class="heading-secondary center-text">
+            Procure atividade
+          </h2>
+
+          <div class="activities-container grid grid--4-cols">
+            <div class="activity">
+              <figure class="activity-img">
+                <img
+                  src="img/1 - Parque Nacional de Maputo1.jpg"
+                  alt="Parque Nacional de Maputo"
+                />
+              </figure>
+
+              <div class="price-container">
+                <span class="price-text">Preço:</span>
+                <div>
+                  <span class="price-old">3000Mt</span>
+                  <span class="price-value">2499Mt</span>
+                </div>
+              </div>
+
+              <a href="#cta" class="activity-heading">Acampamento Parque Nacional de Maputo
+              </a>
+              <ul class="activity-attributes">
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="clock"></ion-icon>
+                  <span><strong>Por noite</strong> </span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="pin"></ion-icon>
+                  <span><strong>Maputo, Moçambique</strong></span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="people"></ion-icon>
+                  <span><strong>2-10</strong> people</span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="star"></ion-icon>
+                  <span><strong>4.8/5</strong> rating (344)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="activity">
+              <figure class="activity-img">
+                <img src="img/2 - Safari no Parque Nacional de Maputo 3H.jpg" alt="Safari Parque Nacional" />
+              </figure>
+
+              <div class="price-container">
+                <span class="price-text">Preço:</span>
+                <div>
+                  <span class="price-old">3200Mt</span>
+                  <span class="price-value">2799Mt</span>
+                </div>
+              </div>
+
+              <a href="#cta" class="activity-heading">Safari Parque Nacional</a>
+              <ul class="activity-attributes">
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="clock"></ion-icon>
+                  <span><strong>3</strong> horas</span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="pin"></ion-icon>
+                  <span><strong>Maputo, Moçambique</strong></span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="people"></ion-icon>
+                  <span><strong>2-10</strong> people</span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="star"></ion-icon>
+                  <span><strong>4.9/5</strong> rating (467)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="activity">
+              <figure class="activity-img">
+                <img src="img/5 - Safari no Parque Nacional Kruger.jpg" alt="Kruger Park" />
+              </figure>
+
+              <div class="price-container">
+                <span class="price-text">Preço:</span>
+                <div>
+                  <span class="price-old">7800Mt</span>
+                  <span class="price-value">7250Mt</span>
+                </div>
+              </div>
+
+              <a href="#cta" class="activity-heading">Kruger Park</a>
+              <ul class="activity-attributes">
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="clock"></ion-icon>
+                  <span><strong>5</strong> horas</span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="pin"></ion-icon>
+                  <span><strong>Johannesburg, South Africa</strong></span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="people"></ion-icon>
+                  <span><strong>10-20</strong> people</span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="star"></ion-icon>
+                  <span><strong>4.7/5</strong> rating (289)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="activity">
+              <figure class="activity-img">
+                <img src="img/4 - Safari no Parque Nacional de Maputo 6H.jpg" alt="Parque Nacional" />
+              </figure>
+
+              <div class="price-container">
+                <span class="price-text">Price:</span>
+                <div>
+                  <span class="price-old"> 4000Mt</span>
+                  <span class="price-value"> 3899Mt</span>
+                </div>
+              </div>
+
+              <a href="#cta" class="activity-heading">Parque Nacional</a>
+              <ul class="activity-attributes">
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="clock"></ion-icon>
+                  <span><strong>6</strong> hours</span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="pin"></ion-icon>
+                  <span><strong>Maputo, Moçambique</strong></span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="people"></ion-icon>
+                  <span><strong>10-20</strong> people</span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="star"></ion-icon>
+                  <span><strong>4.8/5</strong> rating (223)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= LOCATIONS ================= -->
+      <section class="section-locations" id="locations">
+        <div class="container">
+          <span class="subheading">Locais</span>
+          <h2 class="heading-secondary heading-locations">
+            Gostaria de estar em algumas das melhores localizações do mundo?
+          </h2>
+
+          <div class="swiper">
+            <div class="locations-content">
+              <div class="locations-container swiper-wrapper">
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img//locations/san-martinho-hotel.jpg" alt="Bilene" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Bilene</a>
+                    
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-price">5000Mt</span>
+                      <span class="location-duration">Por Dia</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/locations/ilhaDostugas.jpg" alt="ilha dos Portugueses" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">ilha dos Portugueses</a>
+                     
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-price">6000Mt</span>
+                      <span class="location-duration">Por Dia</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/locations/Malongane1.jpg" alt="Ponta Malongane" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Ponta Malongane</a>
+                      
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-price">6000Mt</span>
+                      <span class="location-duration">Por Dia</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/locations/Inhaca_900x675.jpeg" alt="Inhaca" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Inhaca</a>
+                     
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-price">7000Mt</span>
+                      <span class="location-duration">Por Dia</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/locations/tofo.jpg" alt="Tofo" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Tofo</a>
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-price">9000Mt</span>
+                      <span class="location-duration">Por Dia</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/locations/santamaria.jpg" alt= "Santa Maria" img/>
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Santa Maria</a>
+                      
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-price">5700Mt</span>
+                      <span class="location-duration">Por Dia</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/locations/Malongane1.jpg" alt="Cidade De Maputo" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Cidade de Maputo</a>
+                     
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-price">1000Mt</span>
+                      <span class="location-duration">Por Dia</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/locations/PontaDoOURO.jpg" alt="Ponta do Ouro" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Ponta do Ouro</a>
+                      
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-price">4500Mt</span>
+                      <span class="location-duration">Por Dia</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/locations/machangulo.jpg" alt="Machangulo" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Machangulo</a>
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-price">8500Mt</span>
+                      <span class="location-duration">Por Dia</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev locations-btn-prev"></div>
+            <div class="swiper-button-next locations-btn-next"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CATEGORIES ================= -->
+      <section class="section-categories" id="categories">
+        <div class="container">
+          <span class="subheading center-text">Categorias</span>
+          <h2 class="heading-secondary center-text">Procure por Categoria</h2>
+
+          <div class="categories-container">
+            <div class="category">
+              <figure class="category-icon-container">
+                <img
+                  src="img/category-icons/attraction.svg"
+                  alt="attraction icon"
+                  class="category-icon"
+                />
+              </figure>
+              <h3 class="category-heading">Atrações</h3>
+            </div>
+
+            <div class="category">
+              <figure class="category-icon-container">
+                <img
+                  src="img/category-icons/caravan.svg"
+                  alt="caravan icon"
+                  class="category-icon"
+                />
+              </figure>
+              <h3 class="category-heading">Caravanas</h3>
+            </div>
+
+            <div class="category">
+              <figure class="category-icon-container">
+                <img
+                  src="img/category-icons/diving.svg"
+                  alt="diving icon"
+                  class="category-icon"
+                />
+              </figure>
+              <h3 class="category-heading">Scuba-Diving</h3>
+            </div>
+
+            <div class="category">
+              <figure class="category-icon-container">
+                <img
+                  src="img/category-icons/cruise.svg"
+                  alt="cruise icon"
+                  class="category-icon"
+                />
+              </figure>
+              <h3 class="category-heading">Passeio de barco</h3>
+            </div>
+
+            <div class="category">
+              <figure class="category-icon-container">
+                <img
+                  src="img/category-icons/city-travel.svg"
+                  alt="city travel icon"
+                  class="category-icon"
+                />
+              </figure>
+              <h3 class="category-heading">Passeio pela Cidade</h3>
+            </div>
+
+            <div class="category">
+              <figure class="category-icon-container">
+                <img
+                  src="img/category-icons/food-drinks.svg"
+                  alt="food and drinks icon"
+                  class="category-icon"
+                />
+              </figure>
+              <h3 class="category-heading">Gastronomia & bebidas</h3>
+            </div>
+
+            <div class="category">
+              <figure class="category-icon-container">
+                <img
+                  src="img/category-icons/beach.svg"
+                  alt="beach icon"
+                  class="category-icon"
+                />
+              </figure>
+              <h3 class="category-heading">Praias</h3>
+            </div>
+
+            <div class="category">
+              <figure class="category-icon-container">
+                <img
+                  src="img/category-icons/camping.svg"
+                  alt="camping icon"
+                  class="category-icon"
+                />
+              </figure>
+              <h3 class="category-heading">Camping</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TESTIMONIALS ================= -->
+      <section class="section-testimonials" id="testimonials">
+        <div class="container">
+          <span class="subheading center-text">Testimonials</span>
+          <h2 class="heading-secondary center-text">
+            O que nossos clientes dizem sobre nós
+          </h2>
+
+          <div class="testimonials-slider">
+            <div class="testimonials-slide">
+              <address class="testimonial-author">
+                <h4 class="testimonial-name">Luis Tembe</h4>
+                <span class="testimonial-location">Warsaw, Poland</span>
+              </address>
+
+              <div class="testimonial-content">
+                <h3 class="testimonial-heading">Serviço excelente!</h3>
+                <blockquote class="testimonial-text">
+                  Recentemente, usei a KingsTour Agencia de viagens ,para uma viagem à Bilene e
+                  Fiquei impressionado com o nível de serviço e atenção ao
+                  detalhe que recebi. Desde o momento em que comecei a planejar minha viagem,
+                  a equipe do KingsTour foi incrivelmente prestativa e receptiva,
+                  respondendo a todas as minhas perguntas e oferecendo atendimento personalizado
+                  recomendações baseadas em meus interesses.
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="testimonials-slide">
+              <address class="testimonial-author">
+                <h4 class="testimonial-name">Milena Joao</h4>
+                <span class="testimonial-location">Nampula, Moçambique</span>
+              </address>
+
+              <div class="testimonial-content">
+                <h3 class="testimonial-heading">Agência de confiança!</h3>
+                <blockquote class="testimonial-text">
+                  Eu tenho usado KingsTour para todas as minhas necessidades de viagem nos
+                  últimos anos e sempre estive extremamente satisfeito com
+                  o nível de serviço que recebo. A equipe do KingsTour é
+                  confiável, eficiente e sempre vai além para
+                  garantir que minhas viagens sejam tranquilas e sem estresse. Eu sei que
+                  Posso contar com eles para todas as minhas necessidades de viagem.
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="testimonials-slide">
+              <address class="testimonial-author">
+                <h4 class="testimonial-name">Arhtur Mucavele</h4>
+                <span class="testimonial-location">Maputo, Moçambique</span>
+              </address>
+
+              <div class="testimonial-content">
+                <h3 class="testimonial-heading">Experiência incrível!</h3>
+                <blockquote class="testimonial-text">
+                  Recentemente, viajei a Ponta Do Ouro com a KingsTour e tive uma
+                  experiência absolutamente incrível. A partir do momento em que reservei minha 
+                  viagem, a equipe do KingsTour foi incrivelmente prestativa e atenciosa.
+                  Assim que cheguei a Ponta do Ouro, tudo foi resolvido para
+                  mim, a acomodação era excelente e as atividades,
+                  os passeios foram todos bem organizados e agradáveis.
+                </blockquote>
+              </div>
+            </div>
+            <div class="testimonial-btns">
+              <button class="testimonial-slider__btn testimonial__btn--left">
+                <span>&larr;</span>
+              </button>
+              <button class="testimonial-slider__btn testimonial__btn--right">
+                <span>&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TEAM ================= -->
+      <section class="section-team" id="team">
+        <div class="container">
+          <span class="subheading">Nossa equipe</span>
+          <h2 class="heading-secondary heading-team">
+            Conheça nossa equipe de profissionais para orientá-lo melhor
+          </h2>
+
+          <div class="team-container">
+            <div class="team">
+              <figure class="team-img">
+                <img src="img/team/dinho.jpg" alt="team member" />
+              </figure>
+              <div class="team-content">
+                <h3 class="team-name">Bernardo Tembe</h3>
+                <span class="team-position">Guia turístico</span>
+                <span class="team-activities">40 Actividades</span>
+              </div>
+            </div>
+
+            <div class="team">
+              <figure class="team-img">
+                <img src="img/team/Ningo.jpg" alt="team member" />
+              </figure>
+              <div class="team-content">
+                <h3 class="team-name">Bedenengo Tembe</h3>
+                <span class="team-position">Guia turístico</span>
+                <span class="team-activities">20 Actividades</span>
+              </div>
+            </div>
+
+            <div class="team">
+              <figure class="team-img">
+                <img src="img/team/agent-3.jpg" alt="team member" />
+              </figure>
+              <div class="team-content">
+                <h3 class="team-name">Willer Tembe</h3>
+                <span class="team-position">Guia turístico</span>
+                <span class="team-activities">15 Actividades</span>
+              </div>
+            </div>
+
+            <div class="team">
+              <figure class="team-img">
+                <img src="img/team/Oscar Nhaca1.jpg" alt="team member" />
+              </figure>
+              <div class="team-content">
+                <h3 class="team-name">Oscar Nhaca</h3>
+                <span class="team-position">Guia turístico</span>
+                <span class="team-activities">10 Actividades</span>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CALL-TO-ACTION FORM ================= -->
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <span class="subheading center-text">Contacte nos</span>
+          <h2 class="heading-secondary center-text">
+            Pronto para agendar a sua proxima viagem?
+          </h2>
+
+          <div class="cta">
+            <div>
+              <h3 class="heading-tertiary cta-heading">
+                Agende uma visita em nosso escritório
+              </h3>
+              <p class="cta-text">
+                Reserve sua próxima aventura com nossa equipe de especialistas em nosso escritório. Nós
+                estamos abertos 7 dias por semana, das 07h às 18h. Você também pode entrar em contato
+                connosco por telefone ou e-mail.
+              </p>
+            </div>
+
+            <form  action="https://formspree.io/f/xzbqvozb"
+            method="POST" class="form cta-form" >
+              <div>
+                <label for="full-name">Nome completo</label>
+                <input
+                  id="full-name"
+                  type="text"
+                  name="Full Name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">Email address</label>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div>
+                <label for="phone">Telefone</label>
+                <input
+                  id="phone"
+                  type="tel"
+                  name="Phone Number"
+                  required
+                />
+              </div>
+              <div>
+                <label for="date">Data</label>
+                <input id="date" name=" Date " type="date" required />
+              </div>
+              <div> 
+                <label for="time">Horário</label>
+                <input id="time" type="time" name ="time " required />
+              </div>
+              <div>
+                <label for="select-people">Quantas pessoas?</label>
+                <select id="select-people" required name="num-people">
+                  <option value="">Porfavor, escolha uma opção:</option>
+                  <option value="small">1-3</option>
+                  <option value="medium">4-6</option>
+                  <option value="large">7-10</option>
+                  <option value="extra">10+</option>
+                </select>
+              </div>
+              <div class="cta-message">
+                <label for="message">Messagem</label>
+                <textarea
+                  id="message"
+                  placeholder="Your message"
+                  name="Message"
+                  required
+                ></textarea>
+              </div>
+              <button class="btn btn--full" type="submit" >Reserve agora</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+      <div class="footer-container container">
+        <div class="footer-col-1">
+          <a href="#"
+            ><img
+              class="footer-logo"
+              src="img/Logo2.png"
+              alt="logo"
+          /></a>
+
+          <p class="footer-text">
+             Copyright ©
+            <span class="year"></span>
+            KingsTour. All rights reserved.
+          </p>
+
+          <div class="social-media-logos">
+            <a href="#">
+              <ion-icon
+                class="social-media-logo"
+                name="logo-instagram"
+              ></ion-icon>
+            </a>
+            <a href="#"
+              ><ion-icon
+                class="social-media-logo"
+                name="logo-facebook"
+              ></ion-icon
+            ></a>
+            <a href="#"
+              ><ion-icon
+                class="social-media-logo"
+                name="logo-twitter"
+              ></ion-icon
+            ></a>
+            <a href="#"
+              ><ion-icon
+                class="social-media-logo"
+                name="logo-youtube"
+              ></ion-icon
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-col-2">
+          <h4 class="footer-heading">Rapidos Acessos</h4>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="#">Home</a></li>
+            <li><a class="footer-link" href="#">Sobre nos</a></li>
+            <li><a class="footer-link" href="#locations">Destinos</a></li>
+            <li><a class="footer-link" href="#">Parceiros</a></li>
+            <li><a class="footer-link" href="#">Tours</a></li>
+            <li><a class="footer-link" href="#cta">Contacto</a></li>
+            <li><a class="footer-link" href="#">Carreira</a></li>
+          </ul>
+
+          <h4 class="footer-heading">Procuras populares</h4>
+          <div class="search-items">
+            <a class="search-item" href="#">Tours</a>
+            <a class="search-item" href="#">Hoteis</a>
+            <a class="search-item" href="#">Alugar carros</a>
+            <a class="search-item" href="#">Passeios & Ferias</a>
+          </div>
+        </div>
+
+        <div class="footer-col-4">
+          <h4 class="footer-heading">Contacte nos</h4>
+          <div class="footer-contacts">
+            <div class="footer-contact-item">
+              <figure class="footer-figure">
+                <ion-icon class="footer-icon" name="pin"></ion-icon>
+              </figure>
+              <span class="footer-detail">Maputo, Moçambique</span>
+            </div>
+
+            <div class="footer-contact-item">
+              <figure class="footer-figure">
+                <ion-icon class="footer-icon" name="call"></ion-icon>
+              </figure>
+              <span class="footer-detail">+258 84 600 6570</span>
+              <span class="footer-detail-text">Ligue-nos</span>
+            </div>
+
+            <div class="footer-contact-item">
+              <figure class="footer-figure">
+                <ion-icon class="footer-icon" name="mail"></ion-icon>
+              </figure>
+              <a class="footer-detail" href="mailto:kingstour.mz@gmail.com"
+                >kingstour.mz@gmail.com</a
+              >
+              <span class="footer-detail-text">Envie nos um email</span>
+            </div>
+
+            <div class="footer-contact-item">
+              <figure class="footer-figure">
+                <ion-icon class="footer-icon" name="clock"></ion-icon>
+              </figure>
+              <span class="footer-detail">07AM - 6 PM (Segunda - Sabado)</span>
+              <span class="footer-detail-text">Horario de Trabalho</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/desvg@1.0.2/desvg.min.js"></script>
+  </body>
+</html>
