@@ -1,15 +1,9 @@
-# ✈️ JustGO — Travel Agency
+# Kingstour — Travel Agency
 
-A course project for the course _Introduction to Web Programming_ at FMI in Plovdiv University.
-
-## 🔴 Live demo
-
-Check out the live demo [here](https://stekatag.github.io/justgo/)<br>
-© Copyright by Stefan Gogov. All rights reserved.
 
 ## 📝 Description
 
-JustGO Travel Agency has been providing clients with the best travel guides, travel information, and vacation packages for more than a decade. We specialize in travel packages to Europe, Asia, Africa, South America, and the Caribbean. Our guides and services are second to none.
+KingsTour Agency has been providing clients with the best travel guides, travel information, and vacation packages for more than a decade. We specialize in travel packages to Africa.
 
 ## 💡 Features
 
